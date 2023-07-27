@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+     let AtividadeSala, AtividadeCasa, Aprendizagem, Avaliacao ,Hardware, 
+     AtividadeSala2, AtividadeCasa2, Aprendizagem2, Avaliacao2 , Metodologia,
+     AtividadeSala3, AtividadeCasa3, Aprendizagem3, Avaliacao3 , Logic,
+     AtividadeSala4, AtividadeCasa4, Aprendizagem4, Avaliacao4 , BancoDados ,
+     MediaSemestral
+
+     
+    
+     // Arquitetura de Hardware e Software
+      AtividadeSala = Number(prompt("Digite a nota da atividade de sala de Arquitetura de Hardware e Software :"))
+      AtividadeCasa = Number(prompt("digite a nora da Ativade de casa de Arquitetura de Hardware e Software :"))
+      Aprendizagem = Number(prompt("Digite a nota da Situação de aprendizagem de Arquitetura de Hardware e Software :"))
+      Avaliacao = Number(prompt("digite a nota da Avaliação objetiva de Arquitetura de Hardware e Software :"))
+      Hardware = (AtividadeCasa + AtividadeSala+ Aprendizagem + Avaliacao) /4
+
+       
+      
+      //Metodologias de Desenvolvimento de Projetos
+      AtividadeSala2 = Number(prompt("Digite a nota da atividade de sala de Metodologias de Desenvolvimento de Projetos :"))
+      AtividadeCasa2 = Number(prompt("digite a nora da Ativade de casa de Metodologias de Desenvolvimento de Projetos :"))
+      Aprendizagem2 = Number(prompt("Digite a nota da Situação de aprendizagem de Metodologias de Desenvolvimento de Projetos:"))
+      Avaliacao2 = Number(prompt("digite a nota da Avaliação objetiva de Metodologias de Desenvolvimento de Projetos:"))
+      Metodologia = (AtividadeCasa2 + AtividadeSala2+ Aprendizagem2+ Avaliacao2) /4
+
+      
+      //Lógica Computacional
+      AtividadeSala3 = Number(prompt("Digite a nota da atividade sala de Lógica Computacional:"))
+      AtividadeCasa3 = Number(prompt("digite a nora da Ativade de casa de Lógica Computacional:"))
+      Aprendizagem3 = Number(prompt("Digite a nota da Situação de aprendizagem de Lógica Computacional:"))
+      Avaliacao3 = Number(prompt("digite a nota da Avaliação objetiva de Lógica Computacional:"))
+      Logic = (AtividadeCasa3+ AtividadeSala3+ Aprendizagem3+ Avaliacao3) /4
+
+
+      
+      // Fundamentos de banco de dados
+      AtividadeSala4 = Number(prompt("Digite a nota da atividade sala de  Fundamentos de banco de dados:"))
+      AtividadeCasa4 = Number(prompt("digite a nora da Ativade de casa de  Fundamentos de banco de dados:"))
+      Aprendizagem4 = Number(prompt("Digite a nota da Situação de aprendizagem de  Fundamentos de banco de dados:"))
+      Avaliacao4 = Number(prompt("digite a nota da Avaliação objetiva de  Fundamentos de banco de dados:"))
+      BancoDados = (AtividadeCasa4+ AtividadeSala4+ Aprendizagem4+ Avaliacao4) /4
+
+
+
+      MediaSemestral = (BancoDados + Logic + Metodologia + Hardware) /4
+
+
+
+
+      document.write(`A media de Arquitetura de Hardware e Software é: ${(Hardware).toFixed(1)} <br>
+      A media de Metodologias de Desenvolvimento de Projetos é: ${(Metodologia).toFixed(1)} <br>
+      A media de Lógica Computacional é: ${(Logic).toFixed(1)}<br>
+      A media de Fundamentos de banco de dados é: ${(BancoDados).toFixed(1)}<br>
+      A media semestral é: ${(MediaSemestral).toFixed(1)}`)
+
+</script>
+</body>
+</html>
